@@ -1,0 +1,47 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-GJB8D45",
+    "children" : [ {
+      "name" : "213856-MainThread",
+      "children" : [ {
+        "name" : "创建区域",
+        "uid" : "64ff9e896fda1938",
+        "parentUid" : "8aba9bb057c8bbe338c436e915f4bd91",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646617180881,
+          "stop" : 1646617189068,
+          "duration" : 8187
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "删除区域",
+        "uid" : "68619df59d78b010",
+        "parentUid" : "8aba9bb057c8bbe338c436e915f4bd91",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646617189071,
+          "stop" : 1646617194100,
+          "duration" : 5029
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8aba9bb057c8bbe338c436e915f4bd91"
+    } ],
+    "uid" : "0815a9e10e7f47ad1c635ce529be55b4"
+  } ]
+}

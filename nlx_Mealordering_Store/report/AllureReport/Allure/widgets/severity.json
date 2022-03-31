@@ -1,0 +1,21 @@
+[ {
+  "uid" : "68619df59d78b010",
+  "name" : "删除区域",
+  "time" : {
+    "start" : 1646617189071,
+    "stop" : 1646617194100,
+    "duration" : 5029
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "64ff9e896fda1938",
+  "name" : "创建区域",
+  "time" : {
+    "start" : 1646617180881,
+    "stop" : 1646617189068,
+    "duration" : 8187
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

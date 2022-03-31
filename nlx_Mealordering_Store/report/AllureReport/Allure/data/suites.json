@@ -1,0 +1,51 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "test_case",
+    "children" : [ {
+      "name" : "test_area_manage_03",
+      "children" : [ {
+        "name" : "Test_area_case",
+        "children" : [ {
+          "name" : "创建区域",
+          "uid" : "64ff9e896fda1938",
+          "parentUid" : "ed14128887bb55d1466bd35bde8f6549",
+          "status" : "passed",
+          "time" : {
+            "start" : 1646617180881,
+            "stop" : 1646617189068,
+            "duration" : 8187
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "删除区域",
+          "uid" : "68619df59d78b010",
+          "parentUid" : "ed14128887bb55d1466bd35bde8f6549",
+          "status" : "passed",
+          "time" : {
+            "start" : 1646617189071,
+            "stop" : 1646617194100,
+            "duration" : 5029
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "ed14128887bb55d1466bd35bde8f6549"
+      } ],
+      "uid" : "1a6e2033c1fb3058bfe80a46656474b0"
+    } ],
+    "uid" : "86abcc46617c603d802c3e378b13740e"
+  } ]
+}

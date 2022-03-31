@@ -1,0 +1,43 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "座位",
+    "children" : [ {
+      "name" : "创建区域",
+      "uid" : "64ff9e896fda1938",
+      "parentUid" : "b92c300caf18494480ba5cdbf8aff6ec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646617180881,
+        "stop" : 1646617189068,
+        "duration" : 8187
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "删除区域",
+      "uid" : "68619df59d78b010",
+      "parentUid" : "b92c300caf18494480ba5cdbf8aff6ec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646617189071,
+        "stop" : 1646617194100,
+        "duration" : 5029
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "b92c300caf18494480ba5cdbf8aff6ec"
+  } ]
+}

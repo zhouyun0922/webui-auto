@@ -1,0 +1,115 @@
+{
+  "uid" : "64ff9e896fda1938",
+  "name" : "创建区域",
+  "fullName" : "test_case.test_area_manage_03.Test_area_case#test_03_create_area",
+  "historyId" : "bce62379af4717da6a411e334b2dbaeb",
+  "time" : {
+    "start" : 1646617180881,
+    "stop" : 1646617189068,
+    "duration" : 8187
+  },
+  "description" : " 登录 ",
+  "descriptionHtml" : "<p>登录</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "unittest_setUpClass_fixture_Test_area_case",
+    "time" : {
+      "start" : 1646617180875,
+      "stop" : 1646617180875,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : " 登录 ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b561b26b7182ec54",
+      "name" : "用例执行截图",
+      "source" : "b561b26b7182ec54.png",
+      "type" : "image/png",
+      "size" : 64988
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "unittest_setUpClass_fixture_Test_area_case::0",
+    "time" : {
+      "start" : 1646617197394,
+      "stop" : 1646617197394,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "座位"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_area_manage_03"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_area_case"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GJB8D45"
+  }, {
+    "name" : "thread",
+    "value" : "213856-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_area_manage_03"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "64ff9e896fda1938.json",
+  "parameterValues" : [ ]
+}

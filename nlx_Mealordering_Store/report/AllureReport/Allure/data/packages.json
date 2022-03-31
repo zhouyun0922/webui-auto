@@ -1,0 +1,43 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "test_case.test_area_manage_03",
+    "children" : [ {
+      "name" : "创建区域",
+      "uid" : "64ff9e896fda1938",
+      "parentUid" : "64a4ab413f31749f03801643cce8911f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646617180881,
+        "stop" : 1646617189068,
+        "duration" : 8187
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "删除区域",
+      "uid" : "68619df59d78b010",
+      "parentUid" : "64a4ab413f31749f03801643cce8911f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646617189071,
+        "stop" : 1646617194100,
+        "duration" : 5029
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "test_case.test_area_manage_03"
+  } ]
+}
