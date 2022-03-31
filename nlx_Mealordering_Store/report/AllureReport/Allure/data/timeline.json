@@ -4,16 +4,16 @@
   "children" : [ {
     "name" : "DESKTOP-GJB8D45",
     "children" : [ {
-      "name" : "213856-MainThread",
+      "name" : "110800-MainThread",
       "children" : [ {
-        "name" : "创建区域",
-        "uid" : "64ff9e896fda1938",
-        "parentUid" : "8aba9bb057c8bbe338c436e915f4bd91",
-        "status" : "passed",
+        "name" : "删除区域",
+        "uid" : "a91034cb7e8af591",
+        "parentUid" : "7476772b8c4c6f95977c1011b86cc279",
+        "status" : "broken",
         "time" : {
-          "start" : 1646617180881,
-          "stop" : 1646617189068,
-          "duration" : 8187
+          "start" : 1648716734257,
+          "stop" : 1648716737459,
+          "duration" : 3202
         },
         "flaky" : false,
         "newFailed" : false,
@@ -23,14 +23,14 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       }, {
-        "name" : "删除区域",
-        "uid" : "68619df59d78b010",
-        "parentUid" : "8aba9bb057c8bbe338c436e915f4bd91",
-        "status" : "passed",
+        "name" : "创建区域",
+        "uid" : "3ac91416534bd74b",
+        "parentUid" : "7476772b8c4c6f95977c1011b86cc279",
+        "status" : "broken",
         "time" : {
-          "start" : 1646617189071,
-          "stop" : 1646617194100,
-          "duration" : 5029
+          "start" : 1648716729373,
+          "stop" : 1648716730218,
+          "duration" : 845
         },
         "flaky" : false,
         "newFailed" : false,
@@ -40,7 +40,7 @@
         "retriesStatusChange" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "8aba9bb057c8bbe338c436e915f4bd91"
+      "uid" : "7476772b8c4c6f95977c1011b86cc279"
     } ],
     "uid" : "0815a9e10e7f47ad1c635ce529be55b4"
   } ]

@@ -8,7 +8,7 @@
 '''
 import time
 import pytest
-from base.base_util import base_util
+from base.base_util import Baseutil
 from pageobject.home_manage import home_manage
 from pageobject.login_page import login_page
 from pageobject.seat_area_manage import Seat_area_manage
@@ -16,7 +16,7 @@ from pageobject.seat_manage import Seat_manage
 from pageobject.dishes_manage import dishes_manage
 import allure
 
-class Test_home_manage(base_util):
+class Test_home_manage(Baseutil):
     '''预置步骤'''
     '''
     @allure.story("首页")  # 模块名称

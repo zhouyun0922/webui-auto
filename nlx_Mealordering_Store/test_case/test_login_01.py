@@ -8,12 +8,12 @@
 '''
 import pytest
 import time
-from base.base_util import base_util
+from base.base_util import Baseutil
 from pageobject.login_page import login_page
 import allure
 
 
-class Test_login_case(base_util):
+class Test_login_case(Baseutil):
     @allure.story("登录")  # 模块名称
     @allure.title("登录成功")  # 用例名称
     @allure.severity("normal")  # 用例等级

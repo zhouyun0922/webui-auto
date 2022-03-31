@@ -1,21 +1,21 @@
 [ {
-  "uid" : "68619df59d78b010",
+  "uid" : "a91034cb7e8af591",
   "name" : "删除区域",
   "time" : {
-    "start" : 1646617189071,
-    "stop" : 1646617194100,
-    "duration" : 5029
+    "start" : 1648716734257,
+    "stop" : 1648716737459,
+    "duration" : 3202
   },
-  "status" : "passed",
+  "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "64ff9e896fda1938",
+  "uid" : "3ac91416534bd74b",
   "name" : "创建区域",
   "time" : {
-    "start" : 1646617180881,
-    "stop" : 1646617189068,
-    "duration" : 8187
+    "start" : 1648716729373,
+    "stop" : 1648716730218,
+    "duration" : 845
   },
-  "status" : "passed",
+  "status" : "broken",
   "severity" : "normal"
 } ]

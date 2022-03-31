@@ -8,11 +8,11 @@
 '''
 import time
 import pytest
-from base.base_util import base_util
+from base.base_util import Baseutil
 from pageobject.login_page import login_page
 from pageobject.logout_page import logout_page
 import allure
-class Test_logout_case(base_util):
+class Test_logout_case(Baseutil):
     @allure.story("退出")  # 模块名称
     @allure.title("退出成功")  # 用例名称
     @allure.severity("normal")  # 用例等级

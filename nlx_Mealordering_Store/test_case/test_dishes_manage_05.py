@@ -8,12 +8,12 @@
 '''
 import time
 import pytest
-from base.base_util import base_util
+from base.base_util import Baseutil
 from pageobject.login_page import login_page
 from pageobject.dishes_manage import dishes_manage
 import allure
 
-class Test_dishes_manage(base_util):
+class Test_dishes_manage(Baseutil):
     @allure.story("菜品管理")  # 模块名称
     @allure.title("创建菜品分类")  # 用例名称
     @allure.severity("normal")  # 用例等级

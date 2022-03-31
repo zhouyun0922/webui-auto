@@ -2,38 +2,40 @@
   "bce62379af4717da6a411e334b2dbaeb" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "64ff9e896fda1938",
-      "status" : "passed",
+      "uid" : "3ac91416534bd74b",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[2][text()='座位']\"}\n  (Session info: chrome=100.0.4896.60)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00517413+2389011]\n\tOrdinal0 [0x004A9F61+1941345]\n\tOrdinal0 [0x0039C658+837208]\n\tOrdinal0 [0x003C91DD+1020381]\n\tOrdinal0 [0x003C949B+1021083]\n\tOrdinal0 [0x003F6032+1204274]\n\tOrdinal0 [0x003E4194+1130900]\n\tOrdinal0 [0x003F4302+1196802]\n\tOrdinal0 [0x003E3F66+1130342]\n\tOrdinal0 [0x003BE546+976198]\n\tOrdinal0 [0x003BF456+980054]\n\tGetHandleVerifier [0x006C9632+1727522]\n\tGetHandleVerifier [0x0077BA4D+2457661]\n\tGetHandleVerifier [0x005AEB81+569713]\n\tGetHandleVerifier [0x005ADD76+566118]\n\tOrdinal0 [0x004B0B2B+1968939]\n\tOrdinal0 [0x004B5988+1989000]\n\tOrdinal0 [0x004B5A75+1989237]\n\tOrdinal0 [0x004BECB1+2026673]\n\tBaseThreadInitThunk [0x74748484+36]\n\tRtlValidSecurityDescriptor [0x77B62FEA+282]\n\tRtlValidSecurityDescriptor [0x77B62FBA+234]",
       "time" : {
-        "start" : 1646617180881,
-        "stop" : 1646617189068,
-        "duration" : 8187
+        "start" : 1648716729373,
+        "stop" : 1648716730218,
+        "duration" : 845
       }
     } ]
   },
   "81ac890f4a4d22f9621a0bb436985ec0" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "68619df59d78b010",
-      "status" : "passed",
+      "uid" : "a91034cb7e8af591",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[text() = '已删除']\"}\n  (Session info: chrome=100.0.4896.60)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00517413+2389011]\n\tOrdinal0 [0x004A9F61+1941345]\n\tOrdinal0 [0x0039C658+837208]\n\tOrdinal0 [0x003C91DD+1020381]\n\tOrdinal0 [0x003C949B+1021083]\n\tOrdinal0 [0x003F6032+1204274]\n\tOrdinal0 [0x003E4194+1130900]\n\tOrdinal0 [0x003F4302+1196802]\n\tOrdinal0 [0x003E3F66+1130342]\n\tOrdinal0 [0x003BE546+976198]\n\tOrdinal0 [0x003BF456+980054]\n\tGetHandleVerifier [0x006C9632+1727522]\n\tGetHandleVerifier [0x0077BA4D+2457661]\n\tGetHandleVerifier [0x005AEB81+569713]\n\tGetHandleVerifier [0x005ADD76+566118]\n\tOrdinal0 [0x004B0B2B+1968939]\n\tOrdinal0 [0x004B5988+1989000]\n\tOrdinal0 [0x004B5A75+1989237]\n\tOrdinal0 [0x004BECB1+2026673]\n\tBaseThreadInitThunk [0x74748484+36]\n\tRtlValidSecurityDescriptor [0x77B62FEA+282]\n\tRtlValidSecurityDescriptor [0x77B62FBA+234]",
       "time" : {
-        "start" : 1646617189071,
-        "stop" : 1646617194100,
-        "duration" : 5029
+        "start" : 1648716734257,
+        "stop" : 1648716737459,
+        "duration" : 3202
       }
     } ]
   }
