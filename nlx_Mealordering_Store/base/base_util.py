@@ -16,8 +16,7 @@ class Baseutil(object):
     def setup(self) -> None:
         global driver
         # 打开浏览器
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver")
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Chrome(executable_path=r'/usr/bin/chromedriver')
         # 加载网页
         self.driver.get("http://192.168.2.92:8083/login")
         time.sleep(0.5)
