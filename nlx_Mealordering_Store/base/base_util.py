@@ -18,7 +18,6 @@ class Baseutil(object):
         # 打开浏览器
         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver")
         self.driver = webdriver.Chrome()
-		time.sleep(1)
         # 加载网页
         self.driver.get("http://192.168.2.92:8083/login")
         time.sleep(0.5)
