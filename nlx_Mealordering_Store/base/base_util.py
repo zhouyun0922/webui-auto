@@ -13,9 +13,8 @@ import time
 
 class Baseutil(object):
 
-    def setup(self) -> None:
-		global driver
-		global options
+	def setup(self) -> None:
+		global driver, options
 		self.options = webdriver.ChromeOptions()
 		self.options.add_argument('--no-sandbox')
 		self.options.add_argument('--window-size=1420,1080')
@@ -26,17 +25,17 @@ class Baseutil(object):
 		self.options.add_experimental_option('useAutomationExtension', False)
 		self.options.binary_location = '/usr/bin/google-chrome-stable'
 		chrome_driver_binary = "/usr/bin/chromedriver"
-        # 打开浏览器
-        self.driver = webdriver.Chrome(chrome_driver_binary, chrome_options=self.options)
-        # 加载网页
-        self.driver.get("http://192.168.2.92:8083/login")
-        time.sleep(0.5)
-        # 全屏显示
-        self.driver.maximize_window()
+		# 打开浏览器
+		self.driver = webdriver.Chrome(chrome_driver_binary, chrome_options=self.options)
+		# 加载网页
+		self.driver.get("http://192.168.2.92:8083/login")
+		time.sleep(0.5)
+		# 全屏显示
+		self.driver.maximize_window()
 
-    def teardown(self) -> None:
-        img = self.driver.get_screenshot_as_png()
-        allure.attach(img, "用例执行截图", allure.attachment_type.PNG)
+		def teardown(self) -> None:
+			img = self.driver.get_screenshot_as_png()
+			allure.attach(img, "用例执行截图", allure.attachment_type.PNG)
 
 
 '''
