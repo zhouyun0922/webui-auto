@@ -33,9 +33,9 @@ class Baseutil(object):
 		# 全屏显示
 		self.driver.maximize_window()
 
-		def teardown(self) -> None:
-			img = self.driver.get_screenshot_as_png()
-			allure.attach(img, "用例执行截图", allure.attachment_type.PNG)
+	def teardown(self) -> None:
+		img = self.driver.get_screenshot_as_png()
+		allure.attach(img, "用例执行截图", allure.attachment_type.PNG)
 
 
 '''
