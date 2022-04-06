@@ -23,8 +23,8 @@ class Baseutil(object):
 		self.options.add_argument('--disable-gpu')
 		self.options.add_argument("--disable-notifications")
 		self.options.add_experimental_option('useAutomationExtension', False)
-		self.options.binary_location = '/usr/bin/google-chrome-stable'
-		chrome_driver_binary = "/usr/bin/chromedriver"
+		self.options.binary_location = r'/usr/bin/google-chrome-stable'
+		chrome_driver_binary =r"/usr/bin/chromedriver"
 		# 打开浏览器
 		self.driver = webdriver.Chrome(chrome_driver_binary, chrome_options=self.options)
 		# 加载网页
