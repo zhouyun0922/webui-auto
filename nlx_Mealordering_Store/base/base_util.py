@@ -14,7 +14,7 @@ import time
 class Baseutil(object):
 
 	def setup(self) -> None:
-		global driver, options
+		global driver,options
 		self.options = webdriver.ChromeOptions()
 		self.options.add_argument('--no-sandbox')
 		self.options.add_argument('--window-size=1420,1080')
