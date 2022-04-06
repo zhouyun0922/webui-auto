@@ -33,7 +33,6 @@ class Baseutil(object):
 		time.sleep(0.5)
 		# 全屏显示
 		self.driver.maximize_window()
-		driver.quit()
 
 
 	def teardown(self) -> None:
