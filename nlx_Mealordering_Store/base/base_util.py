@@ -16,20 +16,18 @@ class Baseutil(object):
 
 	def setup(self) -> None:
 		global driver
-		'''
 		global options
 		self.options = Options()
-		self.options.add_argument('--no-sandbox')
-		#self.options.add_argument('--window-size=1420,1080')
 		self.options.add_argument('--headless')
-		#self.options.add_argument('--disable-dev-shm-usage')
+		self.options.add_argument('--no-sandbox')
 		self.options.add_argument('--disable-gpu')
+		self.options.add_argument('--disable-dev-shm-usage')
+		#self.options.add_argument('--window-size=1420,1080')
 		#self.options.add_argument("--disable-notifications")
 		#self.options.add_experimental_option('useAutomationExtension', False)
-		self.options.binary_location = r'/usr/bin/google-chrome-stable'
-		'''
+		#self.options.binary_location = r'/usr/bin/google-chrome-stable'
 		# 打开浏览器
-		self.driver = webdriver.Chrome(executable_path=r'/usr/bin/chromedriver')
+		self.driver = webdriver.Chrome(executable_path=r'/usr/bin/chromedriver', options=self.options)
 		time.sleep(2)
 		# 加载网页
 		self.driver.get("http://192.168.2.92:8083/login")
