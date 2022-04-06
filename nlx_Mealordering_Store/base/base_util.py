@@ -15,7 +15,9 @@ import time
 class Baseutil(object):
 
 	def setup(self) -> None:
-		global driver,options
+		global driver
+		'''
+		global options
 		self.options = Options()
 		self.options.add_argument('--no-sandbox')
 		#self.options.add_argument('--window-size=1420,1080')
@@ -25,8 +27,9 @@ class Baseutil(object):
 		#self.options.add_argument("--disable-notifications")
 		#self.options.add_experimental_option('useAutomationExtension', False)
 		self.options.binary_location = r'/usr/bin/google-chrome-stable'
+		'''
 		# 打开浏览器
-		self.driver = webdriver.Chrome(executable_path=r'/usr/bin/chromedriver', chrome_options=self.options)
+		self.driver = webdriver.Chrome(executable_path=r'/usr/bin/chromedriver')
 		# 加载网页
 		self.driver.get("http://192.168.2.92:8083/login")
 		time.sleep(0.5)
