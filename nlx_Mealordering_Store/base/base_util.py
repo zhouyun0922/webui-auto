@@ -17,7 +17,7 @@ class Baseutil(object):
 	def setup(self) -> None:
 		global driver
 		self.options = Options()
-		self.options.add_argument('--headless')
+		#self.options.add_argument('--headless')
 		self.options.add_argument('--no-sandbox')
 		self.options.add_argument('--disable-gpu')
 		self.options.add_argument('--disable-dev-shm-usage')
