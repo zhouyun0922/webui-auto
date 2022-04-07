@@ -60,7 +60,7 @@ class Seat_manage(basepage):
         self.locator_value(Seat_manage.seat_persons_loc,seat_persons)
         time.sleep(2)
         self.locator_click(Seat_manage.save_loc)
-        time.sleep(2)
+        time.sleep(1)
     # 校验新建座位
     def assert_create_seat(self):
         messg =[self.get_value(Seat_manage.assert_create_seat_loc),self.get_value(Seat_manage.assert_seat_loc)]
@@ -79,7 +79,7 @@ class Seat_manage(basepage):
             delete_seat_list[0].click()
         else:
             print("座位不存在")
-        time.sleep(2)
+        time.sleep(1)
         self.locator_click(Seat_manage.confirm_seat_loc)
 
     # 校验删除座位
@@ -92,7 +92,7 @@ class Seat_manage(basepage):
         self.locator_click(Seat_manage.seat_loc)
         time.sleep(2)
         self.locator_click(Seat_manage.seat_manage_loc)
-        time.sleep(2)
+        time.sleep(1)
         self.locator_click(Seat_manage.download_seat_loc)
 
     # 校验下载单个座位二维码

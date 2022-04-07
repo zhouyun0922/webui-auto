@@ -134,9 +134,9 @@ class home_manage(basepage):
         self.locator_click(home_manage.spec_loc)
         time.sleep(3)
         self.locator_click(home_manage.select_spec_loc)
-        time.sleep(5)
+        time.sleep(3)
         self.locator_click(home_manage.add_cart_loc)
-        time.sleep(5)
+        time.sleep(3)
         self.locator_click(home_manage.order_loc)
     # 校验加菜
     def assert_add_food(self):

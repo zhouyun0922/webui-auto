@@ -98,7 +98,7 @@ class dishes_manage(basepage):
         self.locator_value(dishes_manage.classify_name_loc, classify_name)
         time.sleep(2)
         self.locator_click(dishes_manage.save_loc)
-        time.sleep(2)
+        time.sleep(1)
     # 校验菜品分类
     def assert_create_classify(self):
         messg =[self.get_value(dishes_manage.assert_create_classify_loc),self.get_value(dishes_manage.assert_classify_name_loc)]
@@ -195,7 +195,7 @@ class dishes_manage(basepage):
     # 校验下架菜品结果
     def assert_pull_off_dishes(self):
         assert_messg01 = self.get_value(dishes_manage.assert_off_dishes_loc)
-        time.sleep(10)
+        time.sleep(5)
         self.locator_click(dishes_manage.off_tab_loc)
         time.sleep(3)
         assert_dishes_list =self.locator_elements(dishes_manage.dishes_list_loc)
@@ -227,7 +227,7 @@ class dishes_manage(basepage):
     # 校验上架菜品结果
     def assert_put_on_dishes(self):
         assert_messg01 = self.get_value(dishes_manage.assert_on_dishes_loc)
-        time.sleep(5)
+        time.sleep(3)
         self.locator_click(dishes_manage.on_tab_loc)
         time.sleep(3)
         self.locator_click(dishes_manage.paging_loc)
@@ -257,7 +257,7 @@ class dishes_manage(basepage):
             self.locator_click(dishes_manage.set_sale_out_loc)
             time.sleep(2)
             self.locator_click(dishes_manage.confirm_sale_out_loc)
-            time.sleep(5)
+            time.sleep(3)
             self.locator_click(dishes_manage.confirm_01_loc)
         else:
             print("菜品不存在！")
