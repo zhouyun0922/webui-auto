@@ -10,7 +10,7 @@ def uplaod_file(filename):
     # 选择文件地址输入框，点击**
     dlg["Toolbar3"].click()
     # 键盘输入上传文件的路径
-    send_keys(r"C:\Users\周云\Desktop\测试图片")
+    send_keys(r"/home/zhouyun/")
     # 键盘输入回车，打开该路径
     send_keys("{VK_RETURN}")
     time.sleep(1)
