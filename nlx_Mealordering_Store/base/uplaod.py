@@ -3,10 +3,12 @@ import pywinauto
 import time
 from pywinauto.keyboard import send_keys
 def uplaod_file(filename):
+    '''
     # 使用pywinauto来选择文件
     app = pywinauto.Desktop()
     # 选择文件上传的窗口
     dlg = app["打开"]
+    '''
     # 选择文件地址输入框，点击**
     dlg["Toolbar3"].click()
     # 键盘输入上传文件的路径
