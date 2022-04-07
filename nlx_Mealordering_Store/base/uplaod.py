@@ -1,5 +1,6 @@
 #encoding=UTF-8
 import pywinauto
+import pyautogui
 import time
 from pywinauto.keyboard import send_keys
 def uplaod_file(filename):
@@ -15,13 +16,16 @@ def uplaod_file(filename):
     # 键盘输入回车，打开该路径
     send_keys("{VK_RETURN}")
     time.sleep(1)
-    '''
-    app = pywinauto.Application().start(r"/home/zhouyun")
     # 选中文件名输入框，输入文件名
     dlg["文件名(&N):Edit"].type_keys(filename)
     time.sleep(2)
     # 点击打开
     dlg["打开(&O)"].click()
+    '''
+    # 输入文件名
+    pyautogui.write(r"/home/zhouyun/" + filename)
+    # 输入回车键，注意要按2次
+    pyautogui.press('enter', presses=2)
 '''
 if __name__ == "__main__":
     filename = "1.jpg"
