@@ -18,9 +18,9 @@ from email.utils import formataddr
 
 def find_report_name():
     """查找最后生成的报告文件的路径"""
-    result_dir = os.path.abspath('..') + "\\nlx_Mealordering_Store\\report\\AllureReport\\Allure"
+    result_dir = os.path.abspath('..') + "/nlx_Mealordering_Store/report/AllureReport/Allure"
     lists = os.listdir(result_dir)
-    lists.sort(key=lambda fn: os.path.getmtime(result_dir + "\\" + fn))
+    lists.sort(key=lambda fn: os.path.getmtime(result_dir + "/" + fn))
     file_name = os.path.join(result_dir, 'index.html')
     print(file_name)
     return file_name
