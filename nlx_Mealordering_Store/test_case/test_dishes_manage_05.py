@@ -80,7 +80,7 @@ class Test_dishes_manage(Baseutil):
         except Exception as e:
             print("test fail.", format(e))
         time.sleep(4)
-
+'''
     @allure.story("菜品管理")  # 模块名称
     @allure.title("下架菜品")  # 用例名称
     @allure.severity("normal")  # 用例等级
@@ -198,3 +198,4 @@ class Test_dishes_manage(Baseutil):
         except Exception as e:
             print("test fail.", format(e))
         time.sleep(5)
+'''
