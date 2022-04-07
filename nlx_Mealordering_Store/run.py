@@ -11,7 +11,7 @@ import pytest
 import time
 #完善后的allure执行脚本
 class allurerun():
-    test_path = "test_case/test_area_manage_03.py"
+    test_path = "test_case/*.py"
     report_path = "./report/AllureReport"
     now = time.strftime("%Y%m%d%H%M%S",time.localtime(time.time()))
     htmlreport = 'nlx_webshop' + now + '_result.html'

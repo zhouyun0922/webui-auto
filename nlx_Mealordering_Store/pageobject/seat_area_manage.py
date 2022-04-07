@@ -48,9 +48,9 @@ class Seat_area_manage(basepage):
 
     def delete_area(self):
         self.locator_click(Seat_area_manage.set_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_area_manage.area_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         area_list =self.locator_elements(Seat_area_manage.name_area_loc)
         if len(area_list)>0:
             area_confirm_list = self.locator_elements(Seat_area_manage.delete_area_loc)
@@ -58,7 +58,7 @@ class Seat_area_manage(basepage):
             area_confirm_list[0].click()
         else:
             print("区域不存在！")
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_area_manage.confirm_area_loc)
 
     def assert_delete_area(self):

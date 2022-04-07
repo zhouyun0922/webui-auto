@@ -21,11 +21,11 @@ class Test_dishes_manage(Baseutil):
         #登录
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         #创建菜品分类
         ln = dishes_manage(self.driver)
         ln.create_classify("菜品分类测试")
-        time.sleep(0.5)
+        time.sleep(2)
         # 断言
         assert_messg = ln.assert_create_classify()
         print(assert_messg)
@@ -35,7 +35,7 @@ class Test_dishes_manage(Baseutil):
             print("test pass.")
         except Exception as e:
             print("test fail.", format(e))
-        time.sleep(2)
+        time.sleep(4)
 
     @allure.story("菜品管理")  # 模块名称
     @allure.title("删除菜品分类")  # 用例名称
@@ -44,11 +44,11 @@ class Test_dishes_manage(Baseutil):
         #登录
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         #删除菜品分类
         lm = dishes_manage(self.driver)
         lm.delete_classify()
-        time.sleep(0.5)
+        time.sleep(2)
         # 断言
         assert_messg = lm.assert_delete_classify()
         print(assert_messg)
@@ -57,7 +57,7 @@ class Test_dishes_manage(Baseutil):
             print("test pass.")
         except Exception as e:
             print("test fail.", format(e))
-        time.sleep(2)
+        time.sleep(4)
 
     @allure.story("菜品管理")  # 模块名称
     @allure.title("新建菜品")  # 用例名称
@@ -66,11 +66,11 @@ class Test_dishes_manage(Baseutil):
         # 登录
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         # 创建菜品
         lq = dishes_manage(self.driver)
         lq.create_dishes("菜品测试","0.1","规格测试","属性测试","0.1")
-        time.sleep(0.5)
+        time.sleep(2)
         # 断言
         assert_messg = lq.assert_create_dishes()
         print(assert_messg)
@@ -79,7 +79,7 @@ class Test_dishes_manage(Baseutil):
             print("test pass.")
         except Exception as e:
             print("test fail.", format(e))
-        time.sleep(2)
+        time.sleep(4)
 
     @allure.story("菜品管理")  # 模块名称
     @allure.title("下架菜品")  # 用例名称
@@ -88,11 +88,11 @@ class Test_dishes_manage(Baseutil):
         # 登录
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         # 下架菜品
         la = dishes_manage(self.driver)
         la.pull_off_dishes()
-        time.sleep(1)
+        time.sleep(2)
         # 断言
         assert_messg = la.assert_pull_off_dishes()
         print(assert_messg)
@@ -111,11 +111,11 @@ class Test_dishes_manage(Baseutil):
         # 登录
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         # 下架菜品
         lb = dishes_manage(self.driver)
         lb.put_on_dishes()
-        time.sleep(1)
+        time.sleep(2)
         # 断言
         assert_messg = lb.assert_put_on_dishes()
         print(assert_messg)
@@ -134,11 +134,11 @@ class Test_dishes_manage(Baseutil):
         # 登录
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         # 售罄菜品
         lc = dishes_manage(self.driver)
         lc.sale_out_dishes()
-        time.sleep(1)
+        time.sleep(2)
         # 断言
         assert_messg = lc.assert_sale_out_dishes()
         print(assert_messg)
@@ -157,11 +157,11 @@ class Test_dishes_manage(Baseutil):
         # 登录
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         # 可售菜品
         lc = dishes_manage(self.driver)
         lc.sale_on_dishes()
-        time.sleep(1)
+        time.sleep(2)
         # 断言
         assert_messg = lc.assert_sale_on_dishes()
         print(assert_messg)
@@ -180,7 +180,7 @@ class Test_dishes_manage(Baseutil):
         # 登录
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         # 下架菜品
         le = dishes_manage(self.driver)
         le.pull_off_dishes()
@@ -188,7 +188,7 @@ class Test_dishes_manage(Baseutil):
         # 删除菜品
         ld = dishes_manage(self.driver)
         ld.delete_dishes()
-        time.sleep(1)
+        time.sleep(2)
         # 断言
         assert_messg = ld.assert_delete_dishes()
         print(assert_messg)

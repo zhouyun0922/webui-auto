@@ -74,11 +74,11 @@ class home_manage(basepage):
 
     # 商家端添加购物车并下单
     def order_store(self):
-        time.sleep(1)
+        time.sleep(3)
         self.locator_click(home_manage.home_loc)
-        time.sleep(1)
+        time.sleep(3)
         self.locator_click(home_manage.tale_no_loc)
-        time.sleep(2)
+        time.sleep(3)
         self.locator_click(home_manage.number_diners_loc)
         time.sleep(3)
         self.locator_click(home_manage.spec_loc)
@@ -90,7 +90,7 @@ class home_manage(basepage):
         self.locator_click(home_manage.order_loc)
     # 校验商家端添加购物车并下单
     def assert_order_store(self):
-        time.sleep(0.5)
+        time.sleep(3)
         assert_messg01 = self.get_value(home_manage.assert_order_loc)
         time.sleep(2)
         assert_messg02 = self.get_value(home_manage.assert_order_table_status_loc)
@@ -102,9 +102,9 @@ class home_manage(basepage):
         return messg
     # 修改已生成的订单
     def edit_order(self):
-        time.sleep(1)
+        time.sleep(3)
         self.locator_click(home_manage.home_loc)
-        time.sleep(1)
+        time.sleep(3)
         self.locator_click(home_manage.tale_no_loc)
         time.sleep(3)
         self.locator_click(home_manage.edit_loc)
@@ -114,7 +114,7 @@ class home_manage(basepage):
         self.locator_click(home_manage.confirm_edit_loc)
     # 校验修改已生成的订单
     def assert_edit_order(self):
-        time.sleep(0.5)
+        time.sleep(3)
         assert_messg01 = self.get_value(home_manage. assert_edit_order_loc)
         time.sleep(2)
         assert_messg02 = self.get_value(home_manage.assert_edit_num_loc)
@@ -124,9 +124,9 @@ class home_manage(basepage):
         return messg
     # 加菜
     def add_food(self):
-        time.sleep(1)
+        time.sleep(3)
         self.locator_click(home_manage.home_loc)
-        time.sleep(1)
+        time.sleep(3)
         self.locator_click(home_manage.tale_no_loc)
         time.sleep(3)
         self.locator_click(home_manage.add_food_loc)
@@ -140,27 +140,27 @@ class home_manage(basepage):
         self.locator_click(home_manage.order_loc)
     # 校验加菜
     def assert_add_food(self):
-        time.sleep(0.5)
+        time.sleep(3)
         assert_messg01 = self.get_value(home_manage. assert_add_order_loc)
         time.sleep(2)
         assert_messg02 = self.get_value(home_manage.assert_add_tab_loc)
-        time.sleep(1)
+        time.sleep(3)
         assert_messg03 = self.get_value(home_manage.assert_add_dishes_loc)
-        time.sleep(1)
+        time.sleep(3)
         assert_messg04 = self.get_value(home_manage.assert_small_all_tickets_loc)
         messg =[assert_messg01,assert_messg02,assert_messg03,assert_messg04]
         return messg
     # 结账
     def check_order(self,payamount,remark):
-        time.sleep(1)
+        time.sleep(3)
         self.locator_click(home_manage.home_loc)
-        time.sleep(1)
+        time.sleep(3)
         self.locator_click(home_manage.tale_no_loc)
         time.sleep(3)
         self.locator_click(home_manage.check_loc)
-        time.sleep(1)
+        time.sleep(3)
         self.locator_value(home_manage.pay_amount_loc,payamount)
-        time.sleep(1)
+        time.sleep(3)
         self.locator_value(home_manage.remark_loc,remark)
         time.sleep(3)
         self.locator_click(home_manage.confirm_check_loc)
@@ -168,7 +168,7 @@ class home_manage(basepage):
         self.locator_click(home_manage.confirm01_loc)
     # 校验结账
     def assert_check_order(self):
-        time.sleep(0.5)
+        time.sleep(3)
         assert_messg01 = self.get_value(home_manage.assert_check_loc)
         time.sleep(2)
         assert_messg02 = self.get_value(home_manage.assert_check_status_loc)
@@ -176,9 +176,9 @@ class home_manage(basepage):
         return messg
     # 发生退款
     def refund_order(self,refundamount,reason):
-        time.sleep(1)
+        time.sleep(3)
         self.locator_click(home_manage.home_loc)
-        time.sleep(1)
+        time.sleep(3)
         self.locator_click(home_manage.tale_no_loc)
         time.sleep(3)
         self.locator_click(home_manage.refund_loc)
@@ -192,21 +192,21 @@ class home_manage(basepage):
         self.locator_click(home_manage.confirm02_loc)
     # 校验发生退款
     def assert_refund_order(self):
-        time.sleep(0.5)
+        time.sleep(3)
         assert_messg01 = self.get_value(home_manage.assert_refund_amount_tab_loc)
-        time.sleep(1)
+        time.sleep(3)
         assert_messg02 = self.get_value(home_manage.assert_refund_amount_price_loc)
-        time.sleep(1)
+        time.sleep(3)
         assert_messg03 = self.get_value(home_manage.assert_refund_reason_tab_loc)
-        time.sleep(1)
+        time.sleep(3)
         assert_messg04 = self.get_value(home_manage.assert_refund_reason_loc)
         messg =[assert_messg01,assert_messg02,assert_messg03,assert_messg04]
         return messg
     # 翻台
     def rockover_table(self):
-        time.sleep(0.5)
+        time.sleep(3)
         self.locator_click(home_manage.home_loc)
-        time.sleep(1)
+        time.sleep(3)
         self.locator_click(home_manage.tale_no_loc)
         time.sleep(3)
         self.locator_click(home_manage.rockover_table_loc)
@@ -214,7 +214,7 @@ class home_manage(basepage):
         self.locator_click(home_manage.confirm_rockover_loc)
     # 校验翻台
     def assert_rockover_table(self):
-        time.sleep(0.5)
+        time.sleep(3)
         assert_messg01 = self.get_value(home_manage.assert_rockover_table_loc)
         time.sleep(2)
         assert_messg02 = self.get_value(home_manage.assert_table_status_loc)

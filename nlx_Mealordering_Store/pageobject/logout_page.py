@@ -23,8 +23,8 @@ class logout_page(basepage):
     # 页面操作
     def logout_mealordering_store(self):
         self.locator_click(logout_page.click_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(logout_page.logout_loc)
-        time.sleep(0.5)
+        time.sleep(2)
     def assert_logout(self):
         return self.get_value(logout_page.assert_login_loc)

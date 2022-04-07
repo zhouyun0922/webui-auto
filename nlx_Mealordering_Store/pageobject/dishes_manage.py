@@ -88,33 +88,33 @@ class dishes_manage(basepage):
     assert_delete_dishes_loc = (By.XPATH, "//div/span[2][text()='删除菜品成功']")
     # 创建菜品分类
     def create_classify(self,classify_name):
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(dishes_manage.dishes_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(dishes_manage.classify_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(dishes_manage.create_classify_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_value(dishes_manage.classify_name_loc, classify_name)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(dishes_manage.save_loc)
-        time.sleep(0.5)
+        time.sleep(2)
     # 校验菜品分类
     def assert_create_classify(self):
         messg =[self.get_value(dishes_manage.assert_create_classify_loc),self.get_value(dishes_manage.assert_classify_name_loc)]
         return messg
     # 删除菜品分类
     def delete_classify(self):
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(dishes_manage.dishes_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(dishes_manage.classify_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         classify_list = self.locator_elements(dishes_manage.delete_classify_name_loc)
         print(len(classify_list))
         if len(classify_list) > 0:
             self.locator_click(dishes_manage.delete_classify_loc)
-            time.sleep(0.5)
+            time.sleep(2)
             self.locator_click(dishes_manage.confirm_delete_loc)
         else:
             print("分类不存在！")
@@ -125,48 +125,48 @@ class dishes_manage(basepage):
 
     # 新建菜品
     def create_dishes(self,dishes_name,dishes_price,spec_name,spec_attribute,spec_price):
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(dishes_manage.dishes_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(dishes_manage.dishes_manage_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(dishes_manage.create_dishes_loc)
-        time.sleep(1)
+        time.sleep(4)
         self.locator_click(dishes_manage.dishes_classify_loc)
-        time.sleep(1)
+        time.sleep(2)
         self.locator_click(dishes_manage.select_dishes_classify_loc)
-        time.sleep(1)
+        time.sleep(2)
         self.locator_value(dishes_manage.dishes_name_loc, dishes_name)
-        time.sleep(2)
+        time.sleep(4)
         self.locator_click(dishes_manage.upload_pic01_loc)
-        time.sleep(5)
-        uplaod_file('1.jpg')
-        time.sleep(5)
-        self.locator_click(dishes_manage.upload_pic02_loc)
         time.sleep(8)
+        uplaod_file('1.jpg')
+        time.sleep(8)
+        self.locator_click(dishes_manage.upload_pic02_loc)
+        time.sleep(10)
         uplaod_file('2.jpg')
-        time.sleep(2)
+        time.sleep(10)
         self.locator_value(dishes_manage.dishes_price_loc, dishes_price)
-        time.sleep(1)
+        time.sleep(4)
         self.locator_click(dishes_manage.add_spec_loc)
-        time.sleep(1)
+        time.sleep(4)
         self.locator_value(dishes_manage.spec_name_loc, spec_name)
-        time.sleep(1)
+        time.sleep(4)
         self.locator_value(dishes_manage.spec_attribute_loc, spec_attribute)
-        time.sleep(1)
+        time.sleep(4)
         self.locator_value(dishes_manage.spec_price_loc, spec_price)
-        time.sleep(1)
+        time.sleep(4)
         self.locator_click(dishes_manage.spec_submit_loc)
-        time.sleep(1)
+        time.sleep(4)
         self.locator_click(dishes_manage.submit_loc)
 
     # 校验新建菜品结果
     def assert_create_dishes(self):
-        time.sleep(0.5)
-        self.locator_click(dishes_manage.dishes_manage_loc)
-        time.sleep(3)
-        self.locator_click(dishes_manage.paging_loc)
         time.sleep(2)
+        self.locator_click(dishes_manage.dishes_manage_loc)
+        time.sleep(5)
+        self.locator_click(dishes_manage.paging_loc)
+        time.sleep(5)
         dishes_list = self.locator_elements(dishes_manage.assert_dishes_loc)
         print(len(dishes_list))
         if len(dishes_list) > 0:
@@ -176,18 +176,18 @@ class dishes_manage(basepage):
 
     # 下架菜品
     def pull_off_dishes(self):
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(dishes_manage.dishes_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(dishes_manage.dishes_manage_loc)
-        time.sleep(1)
+        time.sleep(3)
         self.locator_click(dishes_manage.paging_loc)
-        time.sleep(1)
+        time.sleep(3)
         dishes_list = self.locator_elements(dishes_manage.dishes_list_loc)
         print(len(dishes_list))
         if len(dishes_list) > 0:
             self.locator_click(dishes_manage.pull_off_loc)
-            time.sleep(0.5)
+            time.sleep(2)
             self.locator_click(dishes_manage.confirm_pull_off_loc)
         else:
             print("菜品不存在！")
@@ -195,9 +195,9 @@ class dishes_manage(basepage):
     # 校验下架菜品结果
     def assert_pull_off_dishes(self):
         assert_messg01 = self.get_value(dishes_manage.assert_off_dishes_loc)
-        time.sleep(5)
+        time.sleep(10)
         self.locator_click(dishes_manage.off_tab_loc)
-        time.sleep(1)
+        time.sleep(3)
         assert_dishes_list =self.locator_elements(dishes_manage.dishes_list_loc)
         if len(assert_dishes_list) > 0:
             assert_messg02 = self.get_value(dishes_manage.assert_off_dishes_status_loc)
@@ -208,18 +208,18 @@ class dishes_manage(basepage):
 
     # 上架菜品
     def put_on_dishes(self):
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(dishes_manage.dishes_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(dishes_manage.dishes_manage_loc)
-        time.sleep(1)
+        time.sleep(3)
         self.locator_click(dishes_manage.off_tab_loc)
-        time.sleep(1)
+        time.sleep(3)
         dishes_list = self.locator_elements(dishes_manage.dishes_list_loc)
         print(len(dishes_list))
         if len(dishes_list) > 0:
             self.locator_click(dishes_manage.put_on_loc)
-            time.sleep(0.5)
+            time.sleep(2)
             self.locator_click(dishes_manage.confirm_put_on_loc)
         else:
             print("菜品不存在！")
@@ -229,9 +229,9 @@ class dishes_manage(basepage):
         assert_messg01 = self.get_value(dishes_manage.assert_on_dishes_loc)
         time.sleep(5)
         self.locator_click(dishes_manage.on_tab_loc)
-        time.sleep(1)
+        time.sleep(3)
         self.locator_click(dishes_manage.paging_loc)
-        time.sleep(1)
+        time.sleep(3)
         assert_dishes_list = self.locator_elements(dishes_manage.on_dishes_name_loc)
         if len(assert_dishes_list) > 0:
             assert_messg02 = self.get_value(dishes_manage.assert_on_dishes_status_loc)
@@ -242,20 +242,20 @@ class dishes_manage(basepage):
 
     # 设置菜品售罄
     def sale_out_dishes(self):
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(dishes_manage.dishes_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(dishes_manage.dishes_manage_loc)
-        time.sleep(1)
+        time.sleep(3)
         self.locator_click(dishes_manage.paging_loc)
-        time.sleep(1)
+        time.sleep(3)
         dishes_list = self.locator_elements(dishes_manage.dishes_list_loc)
         print(len(dishes_list))
         if len(dishes_list) > 0:
             self.locator_click(dishes_manage.sale_out_loc)
-            time.sleep(0.5)
+            time.sleep(2)
             self.locator_click(dishes_manage.set_sale_out_loc)
-            time.sleep(0.5)
+            time.sleep(2)
             self.locator_click(dishes_manage.confirm_sale_out_loc)
             time.sleep(5)
             self.locator_click(dishes_manage.confirm_01_loc)
@@ -264,29 +264,29 @@ class dishes_manage(basepage):
 
     # 校验售罄菜品结果
     def assert_sale_out_dishes(self):
-        time.sleep(0.5)
+        time.sleep(2)
         assert_messg01 = self.get_value(dishes_manage.assert_sale_out_loc)
-        time.sleep(1)
+        time.sleep(3)
         assert_messg02 = self.get_value(dishes_manage.assert_sale_out_status_loc)
         messg = [assert_messg01, assert_messg02]
         return messg
 
     # 设置菜品可售
     def sale_on_dishes(self):
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(dishes_manage.dishes_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(dishes_manage.dishes_manage_loc)
-        time.sleep(1)
+        time.sleep(3)
         self.locator_click(dishes_manage.paging_loc)
-        time.sleep(1)
+        time.sleep(3)
         dishes_list = self.locator_elements(dishes_manage.dishes_list_loc)
         print(len(dishes_list))
         if len(dishes_list) > 0:
             self.locator_click(dishes_manage.sale_on_loc)
-            time.sleep(0.5)
+            time.sleep(2)
             self.locator_click(dishes_manage.set_sale_on_loc)
-            time.sleep(0.5)
+            time.sleep(2)
             self.locator_click(dishes_manage.confirm_sale_on_loc)
             time.sleep(5)
             self.locator_click(dishes_manage.confirm_02_loc)
@@ -296,25 +296,25 @@ class dishes_manage(basepage):
     # 校验可售菜品结果
     def assert_sale_on_dishes(self):
         assert_messg01 = self.get_value(dishes_manage.assert_sale_on_loc)
-        time.sleep(1)
+        time.sleep(2)
         assert_messg02 = self.get_value(dishes_manage.assert_sale_on_status_loc)
         messg = [assert_messg01, assert_messg02]
         return messg
 
     # 删除菜品
     def delete_dishes(self):
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(dishes_manage.dishes_manage_loc)
-        time.sleep(1)
+        time.sleep(3)
         self.locator_click(dishes_manage.off_tab_loc)
-        time.sleep(1)
+        time.sleep(3)
         dishes_list = self.locator_elements(dishes_manage.dishes_list_loc)
         print(len(dishes_list))
         if len(dishes_list) > 0:
             self.locator_click(dishes_manage.delete_dishes_loc)
-            time.sleep(0.5)
+            time.sleep(2)
             self.locator_click(dishes_manage.confirm_delete_dishes_loc)
-            time.sleep(0.5)
+            time.sleep(2)
         else:
             print("菜品不存在！")
 

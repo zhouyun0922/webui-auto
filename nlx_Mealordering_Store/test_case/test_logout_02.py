@@ -20,7 +20,7 @@ class Test_logout_case(Baseutil):
         ''' 登录 '''
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         ''' 退出 '''
         lm = logout_page(self.driver)
         lm.logout_mealordering_store()

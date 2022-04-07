@@ -46,21 +46,21 @@ class Seat_manage(basepage):
     # 新建座位
     def create_seat(self,seat_num,seat_persons):
         #self.locator_click(Seat_manage.seat_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_manage.seat_manage_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_manage.create_seat_button_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_manage.area_name_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_manage.area_nmae_select_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_value(Seat_manage.seat_num_loc,seat_num)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_value(Seat_manage.seat_persons_loc,seat_persons)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_manage.save_loc)
-        time.sleep(0.5)
+        time.sleep(2)
     # 校验新建座位
     def assert_create_seat(self):
         messg =[self.get_value(Seat_manage.assert_create_seat_loc),self.get_value(Seat_manage.assert_seat_loc)]
@@ -68,18 +68,18 @@ class Seat_manage(basepage):
 
     # 删除座位
     def delete_seat(self):
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_manage.seat_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_manage.seat_manage_loc)
-        time.sleep(1)
+        time.sleep(2)
         seat_name_list = self.locator_elements(Seat_manage.name_seat_loc)
         if len(seat_name_list)>0:
             delete_seat_list = self.locator_elements(Seat_manage.delete_seat_loc)
             delete_seat_list[0].click()
         else:
             print("座位不存在")
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_manage.confirm_seat_loc)
 
     # 校验删除座位
@@ -88,16 +88,16 @@ class Seat_manage(basepage):
 
     # 下载单个座位二维码
     def download_seat(self):
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_manage.seat_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_manage.seat_manage_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_manage.download_seat_loc)
 
     # 校验下载单个座位二维码
     def assert_download_seat(self):
-        time.sleep(1)
+        time.sleep(2)
         # 谷歌的默认的下载地址
         result_dir = "C:\\Users\\周云\\Downloads"
         list = os.listdir(result_dir)
@@ -132,16 +132,16 @@ class Seat_manage(basepage):
 
     #批量下载座位二维码
     def download_seats(self):
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_manage.seat_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_manage.seat_manage_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_manage.download_seats_loc)
 
     # 校验批量下载座位二维码
     def assert_download_seats(self):
-        time.sleep(1)
+        time.sleep(2)
         # 谷歌的默认的下载地址
         result_dir = "C:\\Users\\周云\\Downloads"
         list = os.listdir(result_dir)
@@ -176,16 +176,16 @@ class Seat_manage(basepage):
 
     #批量下载座位二维码编码
     def download_seatcodes(self):
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_manage.seat_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_manage.seat_manage_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_manage.download_seatcodes_loc)
 
     # 校验批量下载座位二维码
     def assert_download_seatcodes(self):
-        time.sleep(1)
+        time.sleep(2)
         # 谷歌的默认的下载地址
         result_dir = "C:\\Users\\周云\\Downloads"
         list = os.listdir(result_dir)

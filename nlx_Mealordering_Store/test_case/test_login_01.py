@@ -21,7 +21,7 @@ class Test_login_case(Baseutil):
         ''' 登录 '''
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest1234")
-        time.sleep(0.5)
+        time.sleep(2)
         # 断言
         assert_messg = lp.assert_login()
         print(assert_messg)

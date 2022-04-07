@@ -23,15 +23,15 @@ class Test_seat_case(Baseutil):
         ''' 登录 '''
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         '''创建区域'''
         lm = Seat_area_manage(self.driver)
         lm.create_area("区域测试")
-        time.sleep(0.5)
+        time.sleep(2)
         '''创建座位'''
         ln = Seat_manage(self.driver)
         ln.create_seat("test01","10")
-        time.sleep(0.5)
+        time.sleep(2)
         # 断言
         assert_messg = ln.assert_create_seat()
         print(assert_messg)
@@ -49,11 +49,11 @@ class Test_seat_case(Baseutil):
         ''' 登录 '''
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         '''删除座位'''
         lw = Seat_manage(self.driver)
         lw.delete_seat()
-        time.sleep(0.5)
+        time.sleep(2)
         # 断言
         assert_messg = lw.assert_delete_seat()
         print(assert_messg)
@@ -70,11 +70,11 @@ class Test_seat_case(Baseutil):
         '''登录'''
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         '''下载单个座位二维码'''
         lc = Seat_manage(self.driver)
         lc.download_seat()
-        time.sleep(1)
+        time.sleep(2)
         # 断言
         lc.assert_download_seat()
 
@@ -85,11 +85,11 @@ class Test_seat_case(Baseutil):
         '''登录'''
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         '''批量下载座位二维码'''
         ld = Seat_manage(self.driver)
         ld.download_seats()
-        time.sleep(1)
+        time.sleep(2)
         # 断言
         ld.assert_download_seats()
 
@@ -100,11 +100,11 @@ class Test_seat_case(Baseutil):
         '''登录'''
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         '''批量下载座位二维码编码'''
         ln = Seat_manage(self.driver)
         ln.download_seatcodes()
-        time.sleep(1)
+        time.sleep(2)
         # 断言
         ln.assert_download_seatcodes()
 

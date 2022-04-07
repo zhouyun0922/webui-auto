@@ -97,11 +97,11 @@ class Test_home_manage(Baseutil):
         # 登录
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         # 商家端添加购物车并下单
         lc = home_manage(self.driver)
         lc.order_store()
-        time.sleep(0.5)
+        time.sleep(2)
         # 断言
         assert_messg = lc.assert_order_store()
         print(assert_messg)
@@ -122,11 +122,11 @@ class Test_home_manage(Baseutil):
         # 登录
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         # 修改订单
         lc = home_manage(self.driver)
         lc.edit_order()
-        time.sleep(0.5)
+        time.sleep(2)
         # 断言
         assert_messg = lc.assert_edit_order()
         print(assert_messg)
@@ -147,11 +147,11 @@ class Test_home_manage(Baseutil):
         # 登录
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         # 加菜
         ld = home_manage(self.driver)
         ld.add_food()
-        time.sleep(0.5)
+        time.sleep(2)
         # 断言
         assert_messg = ld.assert_add_food()
         print(assert_messg)
@@ -172,11 +172,11 @@ class Test_home_manage(Baseutil):
         # 登录
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         # 结账
         le = home_manage(self.driver)
         le.check_order("0.3","线下支付")
-        time.sleep(0.5)
+        time.sleep(2)
         # 断言
         assert_messg = le.assert_check_order()
         print(assert_messg)
@@ -195,11 +195,11 @@ class Test_home_manage(Baseutil):
         # 登录
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         # 订单线下退款
         lf = home_manage(self.driver)
         lf.refund_order("0.1","线下退款")
-        time.sleep(0.5)
+        time.sleep(2)
         # 断言
         assert_messg = lf.assert_refund_order()
         print(assert_messg)
@@ -220,11 +220,11 @@ class Test_home_manage(Baseutil):
         # 登录
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         # 翻台
         lg = home_manage(self.driver)
         lg.rockover_table()
-        time.sleep(0.5)
+        time.sleep(2)
         # 断言
         assert_messg = lg.assert_rockover_table()
         print(assert_messg)
