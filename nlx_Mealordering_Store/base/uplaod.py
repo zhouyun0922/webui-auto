@@ -16,7 +16,7 @@ def uplaod_file(filename):
     send_keys("{VK_RETURN}")
     time.sleep(1)
     '''
-    app = application.Application().start(r"/home/zhouyun")
+    app = pywinauto.Application().start(r"/home/zhouyun")
     # 选中文件名输入框，输入文件名
     dlg["文件名(&N):Edit"].type_keys(filename)
     time.sleep(2)
