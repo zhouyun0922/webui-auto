@@ -8,7 +8,6 @@ def uplaod_file(filename):
     app = pywinauto.Desktop()
     # 选择文件上传的窗口
     dlg = app["打开"]
-    '''
     # 选择文件地址输入框，点击**
     dlg["Toolbar3"].click()
     # 键盘输入上传文件的路径
@@ -16,6 +15,8 @@ def uplaod_file(filename):
     # 键盘输入回车，打开该路径
     send_keys("{VK_RETURN}")
     time.sleep(1)
+    '''
+    app = application.Application().start(r"/home/zhouyun")
     # 选中文件名输入框，输入文件名
     dlg["文件名(&N):Edit"].type_keys(filename)
     time.sleep(2)

@@ -14,6 +14,7 @@ from pageobject.dishes_manage import dishes_manage
 import allure
 
 class Test_dishes_manage(Baseutil):
+    '''
     @allure.story("菜品管理")  # 模块名称
     @allure.title("创建菜品分类")  # 用例名称
     @allure.severity("normal")  # 用例等级
@@ -58,7 +59,7 @@ class Test_dishes_manage(Baseutil):
         except Exception as e:
             print("test fail.", format(e))
         time.sleep(4)
-
+    '''
     @allure.story("菜品管理")  # 模块名称
     @allure.title("新建菜品")  # 用例名称
     @allure.severity("normal")  # 用例等级
