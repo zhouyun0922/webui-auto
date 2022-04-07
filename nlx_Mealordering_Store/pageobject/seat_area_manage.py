@@ -30,16 +30,17 @@ class Seat_area_manage(basepage):
     assert_delete_area_loc =(By.XPATH,"//span[text() = '已删除']")
     # 页面操作
     def create_area(self,area_name):
+        time.sleep(2)
         self.locator_click(Seat_area_manage.set_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_area_manage.area_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_area_manage.create_area_button_loc)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_value(Seat_area_manage.area_name_loc,area_name)
-        time.sleep(0.5)
+        time.sleep(2)
         self.locator_click(Seat_area_manage.save_loc)
-        time.sleep(0.5)
+        time.sleep(2)
 
     def assert_create_area(self):
         messg=[self.get_value(Seat_area_manage.assert_create_area_loc),self.get_value(Seat_area_manage.assert_area_loc)]

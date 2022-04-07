@@ -22,7 +22,7 @@ class Test_area_case(Baseutil):
         ''' 登录 '''
         lp = login_page(self.driver)
         lp.login_mealordering_store("13601455223", "zytest123")
-        time.sleep(0.5)
+        time.sleep(2)
         ''' 创建区域 '''
         lm = Seat_area_manage(self.driver)
         lm.create_area("区域测试")
