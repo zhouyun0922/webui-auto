@@ -1,5 +1,5 @@
 #encoding=UTF-8
-from pywinauto import Desktop
+import pywinauto.pywinauto as pywinauto
 import time
 from pywinauto.keyboard import send_keys
 def uplaod_file(filename):
