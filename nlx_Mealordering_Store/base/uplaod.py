@@ -5,7 +5,7 @@ import time
 from pywinauto.keyboard import send_keys
 def uplaod_file(filename):
     # 选择文件
-    send_keys(r"/home/zhouyun" + filename)
+    send_keys(r"/home/zhouyun")
     time.sleep(2)
     # 确定
     send_keys('{ENTER}')
