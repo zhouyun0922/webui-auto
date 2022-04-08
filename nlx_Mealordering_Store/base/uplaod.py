@@ -4,7 +4,6 @@ import pyautogui
 import time
 from pywinauto.keyboard import send_keys
 def uplaod_file(filename):
-    '''
     # 使用pywinauto来选择文件
     app = pywinauto.Desktop()
     # 选择文件上传的窗口
@@ -26,6 +25,7 @@ def uplaod_file(filename):
     pyautogui.write(r"/home/zhouyun/" + filename)
     # 输入回车键，注意要按2次
     pyautogui.press('enter', presses=2)
+    '''
 '''
 if __name__ == "__main__":
     filename = "1.jpg"
