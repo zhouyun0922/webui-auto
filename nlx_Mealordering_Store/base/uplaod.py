@@ -3,6 +3,7 @@ import pywinauto
 import time
 from pywinauto.keyboard import send_keys
 def uplaod_file(filename):
+    '''
     # 使用pywinauto来选择文件
     app = pywinauto.Desktop()
     # 选择文件上传的窗口
@@ -20,11 +21,11 @@ def uplaod_file(filename):
     # 点击打开
     dlg["打开(&O)"].click()
     '''
-    # 输入文件名
-    pyautogui.write(r"/home/zhouyun/" + filename)
-    # 输入回车键，注意要按2次
-    pyautogui.press('enter', presses=2)
-    '''
+    app = pywinauto.Application(r'C:/Users/周云/AppData/Local/Temp/Mxt203/bin')
+    app.start('XWin_MobaX.exe')
+    dlg_open = app['打开']
+    dlg_open.Edit.set_text(r'/home/zhouyun/' + filename)
+    dlg_open['打开'].click()
 '''
 if __name__ == "__main__":
     filename = "1.jpg"
