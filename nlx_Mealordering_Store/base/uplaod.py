@@ -1,8 +1,15 @@
 #encoding=UTF-8
-import pywinauto.pywinauto as pywinauto
+#import pywinauto.pywinauto as pywinauto
+#dir(pywinauto)
 import time
 from pywinauto.keyboard import send_keys
 def uplaod_file(filename):
+    # 选择文件
+    send_keys(r"/home/zhouyun" + filename)
+    time.sleep(2)
+    # 确定
+    send_keys('{ENTER}')
+    '''
     # 使用pywinauto来选择文件
     app = pywinauto.Desktop()
     # 选择文件上传的窗口
@@ -19,6 +26,7 @@ def uplaod_file(filename):
     time.sleep(2)
     # 点击打开
     dlg["打开(&O)"].click()
+    '''
     '''
     app = application.Application(r'C:/Users/周云/AppData/Local/Temp/Mxt203/bin')
     app.start('XWin_MobaX.exe')
