@@ -9,6 +9,10 @@ def uplaod_file(filename):
     time.sleep(2)
     # 确定
     send_keys('{ENTER}')
+    #上传文件
+    send_keys(filename)
+    # 确定
+    send_keys('{ENTER}')
     '''
     # 使用pywinauto来选择文件
     app = pywinauto.Desktop()
