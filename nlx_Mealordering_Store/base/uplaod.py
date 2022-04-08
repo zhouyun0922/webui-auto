@@ -1,6 +1,5 @@
 #encoding=UTF-8
 import pywinauto
-import pyautogui
 import time
 from pywinauto.keyboard import send_keys
 def uplaod_file(filename):
