@@ -18,7 +18,6 @@ import allure
 
 class Test_home_manage(Baseutil):
     '''预置步骤'''
-    '''
     @allure.story("首页")  # 模块名称
     @allure.title("预置条件：创建座位")  # 用例名称
     @allure.severity("normal")  # 用例等级
@@ -89,7 +88,7 @@ class Test_home_manage(Baseutil):
         except Exception as e:
             print("test fail.", format(e))
         time.sleep(2)
-    '''
+
     @allure.story("首页")  # 模块名称
     @allure.title("商家端添加购物车并下单")  # 用例名称
     @allure.severity("normal")  # 用例等级
