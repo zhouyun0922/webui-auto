@@ -99,7 +99,7 @@ class Seat_manage(basepage):
     def assert_download_seat(self):
         time.sleep(2)
         # 谷歌的默认的下载地址
-        result_dir = "C:\\Users\\周云\\Downloads"
+        result_dir = "/root/Downloads"
         list = os.listdir(result_dir)
         # 重新按时间对目录下的文件进行排序 获取最新下载文件的名字
         list.sort(key=lambda fn: os.path.getmtime(result_dir + "\\" + fn))
@@ -143,10 +143,10 @@ class Seat_manage(basepage):
     def assert_download_seats(self):
         time.sleep(2)
         # 谷歌的默认的下载地址
-        result_dir = "C:\\Users\\周云\\Downloads"
+        result_dir = "/root/Downloads"
         list = os.listdir(result_dir)
         # 重新按时间对目录下的文件进行排序 获取最新下载文件的名字
-        list.sort(key=lambda fn: os.path.getmtime(result_dir + "\\" + fn))
+        list.sort(key=lambda fn: os.path.getmtime(result_dir + "/" + fn))
         # list[-1]的这个地方需要拿的是最后一个文件，也就是时间最新的文件
         file = os.path.join(result_dir, list[-1])
         # 这个是获取下载文件的名字，下载时候如果有相同文件 就会带上（1.2....)情况，因此用正则表达式进行去掉括号已经括号的内容
@@ -159,7 +159,7 @@ class Seat_manage(basepage):
         except Exception as e:
             print("test fail:文字名称不正确,当前没有下载成功", format(e))
         # 获取文件的时间：年月日，与当前的年月日进行比较判断是不是已经下载了
-        time1 = datetime.date.fromtimestamp(os.path.getmtime(result_dir + "\\" + list[-1]))
+        time1 = datetime.date.fromtimestamp(os.path.getmtime(result_dir + "/" + list[-1]))
         time2 = time1.strftime('%Y%m%d')
         timestr1 = time.strftime('%Y%m%d', time.localtime(time.time()))
         try:
@@ -187,10 +187,10 @@ class Seat_manage(basepage):
     def assert_download_seatcodes(self):
         time.sleep(2)
         # 谷歌的默认的下载地址
-        result_dir = "C:\\Users\\周云\\Downloads"
+        result_dir = "/root/Downloads"
         list = os.listdir(result_dir)
         # 重新按时间对目录下的文件进行排序 获取最新下载文件的名字
-        list.sort(key=lambda fn: os.path.getmtime(result_dir + "\\" + fn))
+        list.sort(key=lambda fn: os.path.getmtime(result_dir + "/" + fn))
         # list[-1]的这个地方需要拿的是最后一个文件，也就是时间最新的文件
         file = os.path.join(result_dir, list[-1])
         # 这个是获取下载文件的名字，下载时候如果有相同文件 就会带上（1.2....)情况，因此用正则表达式进行去掉括号已经括号的内容
@@ -203,7 +203,7 @@ class Seat_manage(basepage):
         except Exception as e:
             print("test fail:文字名称不正确,当前没有下载成功", format(e))
         # 获取文件的时间：年月日，与当前的年月日进行比较判断是不是已经下载了
-        time1 = datetime.date.fromtimestamp(os.path.getmtime(result_dir + "\\" + list[-1]))
+        time1 = datetime.date.fromtimestamp(os.path.getmtime(result_dir + "/" + list[-1]))
         time2 = time1.strftime('%Y%m%d')
         timestr1 = time.strftime('%Y%m%d', time.localtime(time.time()))
         try:
