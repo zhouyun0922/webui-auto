@@ -20,7 +20,7 @@ class Test_login_case(Baseutil):
     def test_01_login_sucess(self):
         ''' 登录 '''
         lp = login_page(self.driver)
-        lp.login_mealordering_store("13601455223", "zytest1234")
+        lp.login_mealordering_store("13601455223", "zytest123")
         time.sleep(2)
         # 断言
         assert_messg = lp.assert_login()
