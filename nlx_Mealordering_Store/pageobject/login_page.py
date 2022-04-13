@@ -31,7 +31,7 @@ class login_page(basepage):
         self.locator_click(login_page.submit_loc)
 
     def assert_login(self):
-        time.sleep(2)
+        time.sleep(5)
         self.locator_click(login_page.click_loc)
         time.sleep(2)
         messag = self.get_value(login_page.assert_loc)

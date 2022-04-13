@@ -1,0 +1,92 @@
+{
+  "uid" : "322a85c0d340e535",
+  "name" : "test_01_login",
+  "fullName" : "test_case.test_01_login.Test_login_case#test_01_login",
+  "historyId" : "4274dde2e09adf56e5e986022a178548",
+  "time" : {
+    "start" : 1649814885342,
+    "stop" : 1649814896561,
+    "duration" : 11219
+  },
+  "description" : " 登录 ",
+  "descriptionHtml" : "<p>登录</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "unittest_setUpClass_fixture_Test_login_case",
+    "time" : {
+      "start" : 1649814885328,
+      "stop" : 1649814885328,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "unittest_setUpClass_fixture_Test_login_case::0",
+    "time" : {
+      "start" : 1649814896561,
+      "stop" : 1649814896562,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_01_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_login_case"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GJB8D45"
+  }, {
+    "name" : "thread",
+    "value" : "7640-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_01_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "322a85c0d340e535.json",
+  "parameterValues" : [ ]
+}

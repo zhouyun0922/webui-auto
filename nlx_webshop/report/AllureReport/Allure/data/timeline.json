@@ -1,0 +1,93 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-GJB8D45",
+    "children" : [ {
+      "name" : "152548-MainThread",
+      "children" : [ {
+        "name" : "test_01_login",
+        "uid" : "ad5029496a6e34db",
+        "parentUid" : "51fa64a34bf6a84d5c9228101bc67719",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646295911031,
+          "stop" : 1646295920225,
+          "duration" : 9194
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "51fa64a34bf6a84d5c9228101bc67719"
+    }, {
+      "name" : "171752-MainThread",
+      "children" : [ {
+        "name" : "test_01_login",
+        "uid" : "30f95a2a6dc050c4",
+        "parentUid" : "f80f4ab9ff52b82d99ed5b7cea5b23eb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646363555082,
+          "stop" : 1646363555082,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 2,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f80f4ab9ff52b82d99ed5b7cea5b23eb"
+    }, {
+      "name" : "7640-MainThread",
+      "children" : [ {
+        "name" : "test_01_login",
+        "uid" : "322a85c0d340e535",
+        "parentUid" : "7ab5985194d375f29e65b70d1d43e7a3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1649814885342,
+          "stop" : 1649814896561,
+          "duration" : 11219
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7ab5985194d375f29e65b70d1d43e7a3"
+    }, {
+      "name" : "34928-MainThread",
+      "children" : [ {
+        "name" : "登录成功",
+        "uid" : "5ec04c09e22f1d8f",
+        "parentUid" : "c5d5b29039b130d208172de5b2303848",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642663603616,
+          "stop" : 1642663614471,
+          "duration" : 10855
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c5d5b29039b130d208172de5b2303848"
+    } ],
+    "uid" : "0815a9e10e7f47ad1c635ce529be55b4"
+  } ]
+}

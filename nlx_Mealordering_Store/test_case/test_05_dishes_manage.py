@@ -138,7 +138,7 @@ class Test_dishes_manage(Baseutil):
         # 售罄菜品
         lc = dishes_manage(self.driver)
         lc.sale_out_dishes()
-        time.sleep(2)
+        time.sleep(0.5)
         # 断言
         assert_messg = lc.assert_sale_out_dishes()
         print(assert_messg)
@@ -188,7 +188,7 @@ class Test_dishes_manage(Baseutil):
         # 删除菜品
         ld = dishes_manage(self.driver)
         ld.delete_dishes()
-        time.sleep(2)
+        time.sleep(0.5)
         # 断言
         assert_messg = ld.assert_delete_dishes()
         print(assert_messg)

@@ -1,0 +1,41 @@
+{
+  "4100a12eb90b1e54cf2161c6f3c20b6e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "30f95a2a6dc050c4",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'Test_login_case' object has no attribute 'driver'",
+      "time" : {
+        "start" : 1646363555082,
+        "stop" : 1646363555082,
+        "duration" : 0
+      }
+    } ]
+  },
+  "4274dde2e09adf56e5e986022a178548" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "322a85c0d340e535",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649814885342,
+        "stop" : 1649814896561,
+        "duration" : 11219
+      }
+    } ]
+  }
+}

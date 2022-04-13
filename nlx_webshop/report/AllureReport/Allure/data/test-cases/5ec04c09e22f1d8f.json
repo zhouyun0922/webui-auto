@@ -1,0 +1,96 @@
+{
+  "uid" : "5ec04c09e22f1d8f",
+  "name" : "登录成功",
+  "fullName" : "test_case.test_login.Test_login_case#test_01_login",
+  "historyId" : "4100a12eb90b1e54cf2161c6f3c20b6e",
+  "time" : {
+    "start" : 1642663603616,
+    "stop" : 1642663614471,
+    "duration" : 10855
+  },
+  "description" : " 登录 ",
+  "descriptionHtml" : "<p>登录</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "unittest_setUpClass_fixture_Test_login_case",
+    "time" : {
+      "start" : 1642663603600,
+      "stop" : 1642663603600,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "unittest_setUpClass_fixture_Test_login_case::0",
+    "time" : {
+      "start" : 1642663614471,
+      "stop" : 1642663614471,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "登录"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_login_case"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-GJB8D45"
+  }, {
+    "name" : "thread",
+    "value" : "34928-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5ec04c09e22f1d8f.json",
+  "parameterValues" : [ ]
+}
