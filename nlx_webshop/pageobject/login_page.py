@@ -21,8 +21,11 @@ class login_page(basepage):
     # 页面操作
     def login_nlxshop(self, username, password):
         self.locator_click(login_page.button_loc)
+        time.sleep(2)
         self.locator_value(login_page.username_loc, username)
+        time.sleep(2)
         self.locator_value(login_page.password_loc, password)
+        time.sleep(2)
         self.locator_click(login_page.submit_loc)
         time.sleep(3)
 
