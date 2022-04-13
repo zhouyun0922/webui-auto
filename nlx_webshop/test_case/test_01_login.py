@@ -3,15 +3,15 @@
 @auth:zhouyun
 @time:2021-12-27
 '''
-import time,unittest
+import time,allure
 from base.base_util import base_util
 from pageobject.login_page import login_page
 
 
 class Test_login_case(base_util):
-    #@allure.story("登录")  # 模块名称
-    #@allure.title("登录成功")  # 用例名称
-    #@allure.severity("normal")  # 用例等级
+    @allure.story("登录")  # 模块名称
+    @allure.title("登录成功")  # 用例名称
+    @allure.severity("normal")  # 用例等级
     def test_01_login(self):
         ''' 登录 '''
         lp = login_page(self.driver)

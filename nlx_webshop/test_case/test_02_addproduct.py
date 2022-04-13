@@ -4,14 +4,15 @@
 @time:2021-12-27
 '''
 import time
+import allure
 from base.base_util import base_util
 from pageobject.create_product_page import create_product_page
 import testrun
 
 class Testcase_product_add(base_util):
-    @testrun.story("添加商品")  # 模块名称
-    @testrun.title("添加商品")  # 用例名称
-    @testrun.severity("normal")  # 用例等级
+    @allure.story("添加商品")  # 模块名称
+    @allure.title("添加商品")  # 用例名称
+    @allure.severity("normal")  # 用例等级
     def test_01_addproduct(self):
         ''' 商品创建 '''
         #商品创建
