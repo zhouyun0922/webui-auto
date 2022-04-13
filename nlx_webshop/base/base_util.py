@@ -7,6 +7,7 @@ import time
 import unittest
 import allure
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 class base_util(unittest.TestCase):
     def setUp(self) -> None:
