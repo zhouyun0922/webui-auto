@@ -16,7 +16,7 @@ class Test_set_sale_status(base_manage_util):
     @allure.title("上架商品")  # 用例名称
     @allure.severity("normal")  # 用例等级
     #商品上架
-    def test_03_set_onsale(self):
+    def test_04_set_onsale(self):
         pm =set_sale_page(self.driver)
         pm.set_sale_status()
         time.sleep(0.5)
@@ -25,7 +25,7 @@ class Test_set_sale_status(base_manage_util):
     @allure.story("强制下架商品")  # 模块名称
     @allure.title("强制下架商品")  # 用例名称
     @allure.severity("normal")  # 用例等级
-    def test_04_confirm_set_offsale(self):
+    def test_05_confirm_set_offsale(self):
         lp=login_manage_page(self.driver)
         lp.login_manage("zytest", "zytest123")
         time.sleep(2)
@@ -37,7 +37,7 @@ class Test_set_sale_status(base_manage_util):
     @allure.story("强制上架商品")  # 模块名称
     @allure.title("强制上架商品")  # 用例名称
     @allure.severity("normal")  # 用例等级
-    def test_05_confirm_set_onsale(self):
+    def test_06_confirm_set_onsale(self):
         lp=login_manage_page(self.driver)
         lp.login_manage("zytest", "zytest123")
         time.sleep(2)

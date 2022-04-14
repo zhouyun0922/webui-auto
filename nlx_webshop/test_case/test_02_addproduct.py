@@ -13,7 +13,7 @@ class Testcase_product_add(base_util):
     @allure.story("添加商品")  # 模块名称
     @allure.title("添加商品")  # 用例名称
     @allure.severity("normal")  # 用例等级
-    def test_01_addproduct(self):
+    def test_02_addproduct(self):
         ''' 商品创建 '''
         #商品创建
         product_name ="web自动化测试商品"
@@ -25,8 +25,8 @@ class Testcase_product_add(base_util):
         product_code ='1202633'
         product_prices =''
         food_licence ='sc101010101'
-        product_spec_pic =r"C:\Users\周云\Desktop\测试图片\1.jpg"
-        product_pic =r"C:\Users\周云\Desktop\测试图片\1.jpg"
+        product_spec_pic =r"/home/zhouyun/1.jpg"
+        product_pic =r"/home/zhouyun/2.jpg"
 
         #点击导航栏商品按钮
 
